@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Program62
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            object obj2 = 123;
+            string s2 = obj2 as string; // вернёт null, потому что int нельзя безопасно привести к string
+
+            Console.WriteLine($"{s2 == null}"); // выведет True
+        }
+    }
+}
